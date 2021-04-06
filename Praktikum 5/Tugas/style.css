@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("img/eight_horns.png");
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.top{
+    box-sizing: border-box;
+    background-color: burlywood;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+.top p.nProgram{
+    float: left;
+    margin-left: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.top p.nAuthor{
+    float: right;
+    margin-right: 20px;
+}
+.pembungkus{
+    margin-top: 50px;
+    width: 800px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header{
+    margin-top: 20px;
+    height: 174px;
+    background-image: url("img/biodata.png");
+    background-size: cover;
+}
+.konten{
+    background-color: rgb(241,250,238);
+    padding: 10px;
+    color: rgb(38,70,83);
+    padding-bottom: 20px;
+}
+
+.konten p.tanggalPosting{
+    color: tomato;
+}

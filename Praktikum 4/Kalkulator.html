@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<SCRIPT language="Javascript">
+    //<!--
+    function penjumlahan(){
+        const bil1 = document.kirim.bil1.value;
+        const bil2 = document.kirim.bil2.value;
+        const hasil = parseInt(bil1)+parseInt(bil2);
+        document.kirim.hasil.value = hasil.toString();
+    }
+    function pengurangan(){
+        const bil1 = document.kirim.bil1.value;
+        const bil2 = document.kirim.bil2.value;
+        const hasil = parseInt(bil1)-parseInt(bil2);
+        document.kirim.hasil.value = hasil.toString();
+    }
+    function perkalian(){
+        const bil1 = document.kirim.bil1.value;
+        const bil2 = document.kirim.bil2.value;
+        const hasil = parseInt(bil1)*parseInt(bil2);
+        document.kirim.hasil.value = hasil.toString();
+    }
+    function pembagian(){
+        const bil1 = document.kirim.bil1.value;
+        const bil2 = document.kirim.bil2.value;
+        const hasil = parseInt(bil1)/parseInt(bil2);
+        document.kirim.hasil.value = hasil.toString();
+    }
+    //-->
+</SCRIPT>
+<style>
+    .container{
+        margin-left: 20px;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>Kalkulator Sederhana</h1>
+        <form name="kirim" method="post">
+            <table>
+                <tr>
+                    <td colspan="2">Bilangan 1 :</td>
+                    <td colspan="2"><input type="text" name="bil1" size="9"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Bilangan 2 :</td>
+                    <td colspan="2"><input type="text" name="bil2" size="9"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="+" name="jumlah" onclick="penjumlahan()"></td>
+                    <td><input type="button" value="-" name="kurang" onclick="pengurangan()"></td>
+                    <td><input type="button" value="x" name="kali" onclick="perkalian()"></td>
+                    <td><input type="button" value="/" name="bagi" onclick="pembagian()"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Hasil :</td>
+                    <td colspan="2"><input type="text" name="hasil" size="9"></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><input type="reset" value="Reset"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Bilangan</title>
+</head>
+<SCRIPT language="Javascript">
+    //<!--
+    function konversi(){
+        const angka = document.kirim.angka.value;
+        if (angka>=0 && angka<=40) {
+            document.kirim.huruf.value = "E";
+        }else if (angka>=41 && angka<=55) {
+            document.kirim.huruf.value = "D";
+        }else if (angka>=56 && angka<=60) {
+            document.kirim.huruf.value = "C";
+        }else if (angka>=61 && angka<=65) {
+            document.kirim.huruf.value = "BC";
+        }else if (angka>=66 && angka<=70) {
+            document.kirim.huruf.value = "B";
+        }else if (angka>=71 && angka<=80) {
+            document.kirim.huruf.value = "AB";
+        }else if (angka>=81 && angka<=100) {
+            document.kirim.huruf.value = "A";
+        }
+    }
+    //-->
+</SCRIPT>
+<style>
+    .container{
+        margin-left: 20px;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>Konversi Nilai Angka Menjadi Huruf</h1>
+        <form name="kirim" method="post">
+            <p>Masukkan Nilai Angka 0-100</p>
+            <input type="text" name="angka" id="">
+            <input type="button" value="Konversikan" onclick="konversi()">
+            <p>Hasil Konversi</p>
+            <input type="text" name="huruf" id="">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+</body>
+</html>

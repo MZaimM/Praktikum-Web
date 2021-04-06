@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+body{
+    margin: 0 ;
+    padding: 0 ;
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    width: 100%;
+    
+}
+  
+nav ul{
+    list-style: none;
+    display: flex;
+}
+  
+nav ul li{
+    margin: 20px;
+    padding: 5px;
+}
+  
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+  
+a.active{
+    color: #7E2ADB;
+}
+  
+nav ul li:hover{
+    border-bottom: 3px solid #7E2ADB;
+}
+
+section{
+    margin: 0 60px 60px 60px;
+}
+
+h1{
+    color: rgba(126, 42, 219, 1);
+    font-size: 36px;
+}
+
+.title{
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid;
+    border-image: radial-gradient(rgba(145, 41, 228, 1),rgba(145, 41, 228, 0.3), rgba(145, 41, 228, 0)) 1;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 40px;
+}
+
+.jenjang{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+
+.jenjang table{
+  text-align: center;
+  padding: 0 50px;
+ 
+}
+.jenjang table tr th{
+  font-size: 28px;
+  color: #7E2ADB;
+}
+.tingkat{
+  margin:10px;
+  box-shadow: 2px 2px 10px #7E2ADB;
+  border-radius: 10px;
+}
+
+
+.training-wrapper{
+  margin-top: 32px;
+}
+
+.tanggal{
+  color: #9129E4;
+  font-size: 18px;
+
+}
+
+.judul-training{
+  font-weight: bolder;
+  font-size: 18px;
+  padding-left: 24px;  
+}
+.line{
+  background: #7E2ADB;
+  opacity: 0.8;
+}
+.isi{
+  text-align: justify;
+}

@@ -1,0 +1,10 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightgrey;
+    }
+    img {
+    width: 100px;
+    }
+    img.top {vertical-align: top;}
+    img.middle {vertical-align: middle;}
+    img.bottom {vertical-align: bottom;}
